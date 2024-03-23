@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dokja</title>
+</head>
+<body>
+    <style>
+        body , html{
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+            height:100% ;
+        }
+
+
+
+        .dokja{
+            position: relative;
+            width: 50%;
+            height: 50%;
+            background: url(dokja.jpg) no-repeat center center/cover;
+            opacity: 50%;
+            left: 100px;
+            top: 50px;
+        }
+        
+        .texto-presentacion{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color:darkmagenta;
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+        }
+        .cuadrado{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+        }
+        
+        .ojos{
+            display: block;
+            width: 50px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50% 50% 50% 50% / 60% 60% 60% 60%;
+            position: relative;
+        }
+        .triangulo-normal{
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 80px solid black; 
+        }
+        .trianguloizquierda{
+            width: 0;
+            height: 0;
+            border-top: 40px solid black;
+            border-bottom: 40px solid transparent;
+        }
+
+        .eclipse{
+            float: left;
+            width: 150px ;
+            height: 150px;
+            margin: 20px;
+            shape-outside: ellipse(20% 50%);
+            clip-path: ellipse(20% 50%);
+            background-color: black;
+        }
+
+
+
+        
+    </style>
+    <div class="dokja">
+     <div class="texto-presentacion">
+        <h1>Mi primer dibujo en css</h1>
+        <h2>Diseñado por: Victor Rivera </h2>
+        <p>De la especialidad progamacion de 4 semestre de la escuela cetis</p>
+     </div>
+    </div>
+    <div class="cuadrado" style="left: 150px; top: 70px; border-radius: 50%;"></div>
+    <div class="cuadrado" style="width: 100px; height: 100px; left: 200px;top: 250px; border-radius: 50%;"></div>
+    <div class="ojos" style="top: -280px;left: 250px;"></div>
+    <div class="ojos" style="top: -380px;left: 170px;"></div>
+    <div class="cuadrado" style="height: 20px; width: 20px; left: 190px;top: 170px; border-radius: 50%;
+    background-color: white;"></div>
+        <div class="cuadrado" style="height: 20px; width: 20px; left: 190px;top: 170px; border-radius: 50%;
+        background-color: white;"></div>
+</body>
+</html>
